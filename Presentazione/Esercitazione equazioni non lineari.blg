@@ -1,0 +1,9 @@
+[0] Config.pm:302> INFO - This is Biber 2.11
+[1] Config.pm:305> INFO - Logfile is 'Esercitazione equazioni non lineari.blg'
+[37] biber-MSWIN64:313> INFO - === 
+[76] Biber.pm:371> INFO - Reading 'Esercitazione equazioni non lineari.bcf'
+[175] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[182] Utils.pm:193> WARN - The file 'Esercitazione equazioni non lineari.bcf' does not contain any citations!
+[192] bbl.pm:617> INFO - Writing 'Esercitazione equazioni non lineari.bbl' with encoding 'UTF-8'
+[192] bbl.pm:720> INFO - Output to Esercitazione equazioni non lineari.bbl
+[195] Biber.pm:110> INFO - WARNINGS: 1

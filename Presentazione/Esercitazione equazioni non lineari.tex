@@ -1,0 +1,116 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+
+%%%%%%%%%% LINGUE %%%%%%%%%%
+\usepackage[latin,english,italian]{babel}
+\usepackage{csquotes}
+
+%%%%%%%%%% CONTENUTI %%%%%%%%%%
+\usepackage{booktabs}
+\usepackage{graphicx, graphics}
+\usepackage{float}
+\usepackage{caption,subcaption}
+
+%%%%%%%%%% MATLAB %%%%%%%%%%
+\usepackage{listings} % codici
+\usepackage{courier} % font codici
+\usepackage[framed]{matlab-prettifier}
+
+\lstset{
+	style=Matlab-editor,
+	basicstyle=\fontfamily{pcr}\footnotesize,
+	captionpos=t}
+
+
+% Il testo fra "--" viene impaginato come codice MATLAB, 
+% attenzione a disabilitare la conversione delle virgolette in virgolette!
+\lstMakeShortInline[style=Matlab-editor]"
+
+
+%%%%%%%%%% COMANDI %%%%%%%%%%
+\newcommand{\abs}[1]{\left\vert #1 \right\vert}
+
+%%%%%%%%%% AMBIENTI e STRUTTURA %%%%%%%%%%
+
+%%%%%%%%%% MATEMATICA e STRUTTURA %%%%%%%%%%
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools,mathdots}
+
+\theoremstyle{definition}
+\newtheorem{thm}{Teorema}
+\newtheorem{oss}{Osservazione}
+\newtheorem{cor}{Corollario}
+
+%%%%%%%%%% INDICE %%%%%%%%%%%%%%%%%%%%%
+\usepackage{hyperref}
+
+%\usepackage{bookmark}
+%\setcounter{secnumdepth}{3}
+%\setcounter{tocdepth}{5}
+%\makeatletter
+%\renewcommand*\l@paragraph{\@dottedtocline{4}{5.0em}{4.1em}}
+%\renewcommand*\l@subparagraph{\@dottedtocline{5}{6.0em}{5.1em}}
+%\makeatother
+
+%%%%%%%%%% GEOMETRIA della PAGINA %%%%%%%%%%
+\usepackage[margin=2.7cm,headheight=3.1cm]{geometry}
+\setlength{\parindent}{0cm}
+
+%%%%%%%%%% CORREZIONI SILE %%%%%%%%%%
+% Elenchi numerati automaticamente come (a), (b),...
+\usepackage{enumitem}
+\setlist[enumerate,1]{label={(\alph*)}}
+
+% Matrici con interplinea normale 
+\usepackage{setspace}
+\linespread{1.15}
+\renewcommand{\arraystretch}{1}
+
+%%%%%%%%%% HEAD-FOOT %%%%%%%%%%
+\usepackage{fancyhdr} % custom headers
+\pagestyle{fancy}
+
+\rhead{\hmwkAuthorName}
+\lhead{\hmwkClass}
+\chead{\hmwkTitle}
+
+\cfoot{\thepage}
+
+%%%%%%%%%% TITOLO %%%%%%%%%%
+\title{
+	\vspace{1cm}
+	\textmd{\hmwkClass:\ \hmwkTitle}\\
+	\vspace{.5cm}
+	\small{consegna: \textit{\hmwkDueDate}} }
+
+\author{\hmwkAuthorName}
+\date{}
+
+%%%%%%%%%% BIBLIOGRAFIA %%%%%%%%%%
+\usepackage[backend=biber]{biblatex}
+\bibliography{Riferimenti}
+
+%%%%%%%%%% INFORMAZIONI %%%%%%%%%%
+\newcommand{\hmwkTitle}{Esercizi sulla risoluzione di equazioni non lineari} % Titolo
+\newcommand{\hmwkDueDate}{Novembre 2018} % Data di consegna
+\newcommand{\hmwkClass}{Matematica Numerica} % Corso
+\newcommand{\hmwkAuthorName}{Ariel S. Boiardi} % Nome
+
+%%%%%%%%%% DOCUMENTO %%%%%%%%%%
+\begin{document}
+\maketitle
+
+\section{Metodi di Newton per radici multiple}
+Abbiamo messo a punto il risolutore Newton per radici multiple con la seguente struttura: prima di tutto il risolutore fondamentale fatto con parecchia attenzione, abiamo piu utilizzato tale risolutore con piccoli adattamenti per il caso di radici multiple. 
+
+\paragraph{Qualche esempio}
+Abbiamo considerato come caso base l'equazione $f(x)=x^2(x^3-1)=0$, che presenta una certa ricchezza di comportamenti, avendo una radice doppia reale e tre radici semplici di cui usa sola reale, in particolare $0$ è radice doppia e 1 è radice semplice, in campo complesso invece abbiamo tutte e tre le radici dell'unità.
+
+Proviamo scegliendo vari punti iniziali
+
+\begin{enumerate}
+	\item Iniziamo con $x_0=-1$
+\end{enumerate}
+
+\printbibliography
+\end{document}

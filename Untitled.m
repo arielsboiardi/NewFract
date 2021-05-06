@@ -1,0 +1,1 @@
+[z1,Niter1,zn1,Dzn1]=Newton_multiroot(f,df,ddf,z01,tol,Nmax);
